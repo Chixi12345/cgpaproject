@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Affordable and Professional web design" />
+    <meta
+      name="keywords"
+      content="web design, affordable web design, professional web design"
+    />
+    <meta name="author" content="Emco" />
+    <title>CGPA CALCULATOR | WELCOME</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="body-flex">
+    <div class="left-side-bar">
+      <header>
+        <img class="logo" src="cgpalogonew1.png" />
+      </header>
+      <section id="box">
+        <div class="btncon1 buttoncontainer1">
+          <button class="show-modal" type="button">SIMPLE GUIDE</button>
+        </div>
+        <div class="btncon2 buttoncontainer1">
+          <a href="#"><button type="button">CGPA SYSTEM</button></a>
+        </div>
+      </section>
+    </div>
+    <img class="logo hidden yabatech-logo" src="logo.png" />
+    <div class="right-side-bar">
+      <article class="formbackground">
+        <div class="styleopt">
+          <label> Select Your School</label><br />
+          <select class="styleopt select-school">
+            <option>-------</option>
+            <option value="yabatech">Yaba College of Technology</option>
+              </select>
+        </div>
+
+        <div class="styleopt hidden polytechnics">
+          <label>Select Your Program</label><br />
+          <select class="styleopt inputtype">
+            <option value="">--------</option>
+            <option value="0" class="nd1">National Diploma</option>
+            <option value="1" class="hnd1`">Higher National Diploma</option>
+          </select>
+        </div>
+        <div class="styleopt hidden ndoptionslay">
+          <label> Select Your Recent Level</label><br />
+          <select class="styleopt inputtype--one">
+            <option value="empty--value">--------</option>
+            <option value="nd1first">ND 1 First Semester</option>
+            <option value="nd1second">ND 1 Second Semester</option>
+            <option value="nd2first">ND 2 First Semester</option>
+            <option value="nd2second">ND 2 Second Semester</option>
+            <option value="nd3first">ND 3 First Semester</option>
+            <option value="nd3second">ND 3 Second Semester</option>
+          </select>
+        </div>
+        <div class="styleopt bottommargin hidden hndoptionslay">
+          <label> Select Your Recent Level</label><br />
+          <select class="styleopt inputtype--two">
+            <option value="empty--value2">--------</option>
+            <option value="hnd1first">HND 1 First Semester</option>
+            <option value="hnd1second">HND 1 Second Semester</option>
+            <option value="hnd2first">HND 2 First Semester</option>
+            <option value="hnd2second">HND 2 Second Semester</option>
+            <option value="hnd3first">HND 3 First Semester</option>
+            <option value="hnd3second">HND 3 Second Semester</option>
+          </select>
+        </div>
+
+        <form class="ndform">
+          <div class="num1 hidden">
+            <input
+              type="text"
+              class="ndfirstgpa ndfirstgpa1"
+              placeholder="Input ND1 First Semester GPA"
+            />
+          </div>
+          <div class="num2 hidden">
+            <input
+              type="text"
+              class="ndsecondgpa ndsecondgpa2"
+              placeholder="Input ND1 Second Semester GPA"
+            />
+          </div>
+          <div class="num3 hidden">
+            <input
+              type="text"
+              class="ndthirdgpa"
+              placeholder="Input ND2 First Semester GPA"
+            />
+          </div>
+          <div class="num4 hidden">
+            <input
+              type="text"
+              class="ndforthgpa"
+              placeholder="Input ND2 Second Semester GPA"
+            />
+          </div>
+          <div class="num5 hidden">
+            <input
+              type="text"
+              class="ndfifthgpa"
+              placeholder="Input ND3 First Semester GPA"
+            />
+          </div>
+          <div class="num6 hidden">
+            <input
+              type="text"
+              class="ndsixthgpa"
+              placeholder="Input ND3 Second Semester GPA"
+            />
+          </div>
+          <div class="colorbutton hidden">
+            <button type="button">CALCULATE MY CGPA</button>
+            <!-- <input type="button" onClick="cgpaCalc()" value="Calculate My CGPA" /> -->
+          </div>
+        </form>
+        <form class="hndform">
+          <div>
+            <input
+              type="text"
+              class="hnum1 hidden"
+              placeholder="Input HND1 First Semester GPA"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="hnum2 hidden"
+              placeholder="Input HND1 Second Semester GPA"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="hnum3 hidden"
+              placeholder="Input HND2 First Semester GPA"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="hnum4 hidden"
+              placeholder="Input HND2 Second Semester GPA"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="hnum5 hidden"
+              placeholder="Input HND3 First Semester GPA"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              class="hnum6 hidden"
+              placeholder="Input HND3 Second Semester GPA"
+            />
+          </div>
+          <div class="colorbutton1 hidden">
+            <button type="button" onClick="cgpaCalc()">
+              CALCULATE MY CGPA
+            </button>
+            <!-- <input type="button" onClick="cgpaCalc()" value="Calculate My CGPA" /> -->
+          </div>
+        </form>
+      </article>
+      <div>
+        <p>
+          Your CGPA is: <br />
+          <span class="result"> ? </span>
+        </p>
+      </div>
+      <section>
+        <div class="container hidden modal" id="stepborder">
+          <button class="close-modal">&times;</button>
+          <div class="modal-steps margin--top">
+            <h3>Step 1</h3>
+            <p>Select your school</p>
+          </div>
+
+          <div class="modal-steps">
+            <h3>Step 2</h3>
+            <p>For Polytechnics "Select your program"</p>
+            <p>For Universities "Select your Year"</p>
+            <p>For College of Education "Select your Year"</p>
+          </div>
+
+          <div class="modal-steps">
+            <h3>Step 3</h3>
+            <p>Input your GPA</p>
+          </div>
+
+          <div class="modal-steps">
+            <h3>Step 4</h3>
+            <p>Select Calculate GPA to get your CGPA calculate</p>
+          </div>
+
+          <div class="buttoncontainer1">
+            <p>To view a screenshot guide click the button below</p>
+            <a href="guide.pdf" target="_blank"><button>View Guide</button></a>
+          </div>
+          <!-- 
+        <div class="close-modal">
+          <button>CLOSE</button>
+        </div> -->
+        </div>
+      </section>
+      <div class="overlay hidden"></div>
+    </div>
+    <div class="footer-class">
+    <footer>
+      <p>&#169 NeutronTech 2021 </p> 
+      <p>+234 818 3853 518</p>
+    </footer>
+    </div>
+  </body>
+</html>
